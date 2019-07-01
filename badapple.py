@@ -10,10 +10,10 @@ def draw(img):
     str = ""
     for pixel in iter(img.getdata()):
         # print(pixel)
-        w += 1
         if(w == mw):
             w = 0
             str += "\n"
+        w += 1
         if(pixel == 0):
             str += "  "
         else:
