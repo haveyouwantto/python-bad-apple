@@ -19,6 +19,7 @@ def draw(img):
         else:
             str += "##"
     print(str)
+    print('\033[31A')
 
 
 t = time.time()
