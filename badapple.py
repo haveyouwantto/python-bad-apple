@@ -37,10 +37,14 @@ try:
     mp3.start()
 except:
     pass
-size = 1200
-with gzip.open('bad-apple.dat.gz') as f:
-    while i < 6573:
-        i = int((time.time()-t)*30)+1
-        f.seek(i*size)
-        draw(f.read(1200))
-        time.sleep(0.02)
+
+try:
+    size = 1200
+    with gzip.open('bad-apple.dat.gz') as f:
+        while i < 6573:
+            i = int((time.time()-t)*30)+1
+            f.seek(i*size)
+            draw(f.read(1200))
+            time.sleep(0.02)
+except KeyboardInterrupt:
+    print(""+'\033[30B')
