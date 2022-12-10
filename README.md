@@ -1,9 +1,20 @@
 # python-bad-apple
-中文:
-一个非常简单的Python Bad Apple播放器
-在终端生成Bad Apple字符画
+这是一个使用 Python 实现的简单版本的 Bad Apple 字符画播放器。
 
-需要`playsound, vext`这个module
+运行需要安装下列模块：
+
+- `playsound`
+- `vext`
+- `vext.gi`
+
+安装方法：
+
+- Linux：`pip3 install -r requirements.txt`
+- Windows：`pip install -r requirements.txt`
+
+项目可以在没有安装任何额外包的情况下运行，但是不会播放声音。
+
+如果需要播放声音，需要先安装上面列出的模块，并将音频文件 `bad_apple.mp3` 放到与 `badapple.py` 文件同一目录下。
 
 EN:
 
